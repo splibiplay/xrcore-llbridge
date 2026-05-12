@@ -7,6 +7,12 @@
 
 Bridge module between XRCore runtime signals and LLM orchestration flows.
 
+## Published foundation (Unity Asset Store)
+
+Install the core SDK from Unity first, then add this module via Git URL:
+
+- [XRCore – Event-Driven AI Framework for Unity XR](https://assetstore.unity.com/packages/tools/ai-ml-integration/xrcore-event-driven-ai-framework-for-unity-xr-366852)
+
 ## Value in 2 Minutes
 
 1. Install SDK + Voice + LLBridge.
@@ -35,6 +41,7 @@ LLM orchestration + Analytics
 
 - Hub: [splibiplay](https://github.com/splibiplay/splibiplay)
 - SDK: [xrcore-sdk](https://github.com/splibiplay/xrcore-sdk)
+- Context: [xrcore-context](https://github.com/splibiplay/xrcore-context)
 - Training Toolkit: [xrcore-training-toolkit](https://github.com/splibiplay/xrcore-training-toolkit)
 - Assessment: [xrcore-assessment](https://github.com/splibiplay/xrcore-assessment)
 - Authoring: [xrcore-training-authoring](https://github.com/splibiplay/xrcore-training-authoring)
