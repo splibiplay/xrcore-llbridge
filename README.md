@@ -84,3 +84,14 @@ XRCoreEventBus / XRCapabilityRegistry / Analytics
 - Sold as standalone intelligence extension.
 - Included in XRCore Complete Pack.
 - Recommended when connecting XR workflows with LLM-based guidance.
+
+## Documentation
+
+- [QuickStart](Documentation/QuickStart.md)
+- [Changelog](Documentation/CHANGELOG.md)
+- [Third-Party Notices](Documentation/THIRD_PARTY_NOTICES.md)
+
+## Support
+
+- Email: `support@xrcore.dev`
+- Website: `https://xrcore.dev`
