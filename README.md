@@ -1,11 +1,11 @@
-# XRCore LLBridge
+# XRCore LLM Bridge
 
 [![Unity](https://img.shields.io/badge/Unity-2022%2B%20%7C%20Unity%206-black)](https://unity.com/)
 [![Module](https://img.shields.io/badge/Module-LLM%20Bridge-2563eb)](#)
 [![Depends](https://img.shields.io/badge/Depends-SDK%20%2B%20Context%20%2B%20Voice-7a3cff)](#)
 [![Contract](https://img.shields.io/badge/Contract-Orchestration%20Events-0ea5e9)](#)
 
-Bridge module between XRCore runtime signals and LLM orchestration flows.
+LLM orchestration bridge between XRCore runtime signals and provider-agnostic language workflows.
 
 ## Published foundation (Unity Asset Store)
 
@@ -15,27 +15,49 @@ Install the core SDK from Unity first, then add this module via Git URL:
 
 ## Value in 2 Minutes
 
-1. Install SDK + Voice + LLBridge.
-2. Add LLBridge runtime bridge to your scene.
+1. Install SDK + Voice + LLM Bridge.
+2. Add LLM Bridge runtime component to your scene.
 3. Trigger a sample event from Voice or Vision.
-4. Validate bridge output event and state propagation.
+4. Validate route/tool-call/normalized-response traces.
 
 ## What It Adds
 
-- LLM bridge event contracts
+- LLM orchestration event contracts
 - profile-driven bridge behavior toggles
-- runtime adapter for tool calls and orchestration routing
+- runtime adapter for routing, tool-call planning, summarization, and response normalization
 - standard integration point for analytics-ready traces
+- optional capability registration into `com.xrcore.ai`
+
+## Capability Surface (AI integration)
+
+- `llm.generate_response`
+- `llm.route_prompt`
+- `llm.summarize_context`
+- `llm.execute_tool_call`
+- `llm.normalize_response`
 
 ## Ecosystem Position
 
 ```text
-Voice / VisionPlus events
+XRCore Events / Voice / Vision / Context
          ↓
-XRCore LLBridge
+XRCore LLM Bridge
          ↓
-LLM orchestration + Analytics
+Provider Abstraction
+         ↓
+OpenAI / Ollama / LM Studio / Azure / Mock
+         ↓
+Normalized LLM Response
+         ↓
+XRCoreEventBus / XRCapabilityRegistry / Analytics
 ```
+
+## Architectural Boundaries
+
+- Not an agent.
+- No training logic.
+- No MCP dependency.
+- MCP exposure lives in `xrcore-ai-mcp`.
 
 ## Related XRCore Modules
 
