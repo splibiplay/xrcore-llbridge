@@ -2,7 +2,7 @@
 
 ## Goal
 
-Validate prompt routing, tool-call planning, normalized responses, and context traces in under two minutes.
+Validate prompt routing, capability execution, normalized responses, and context traces in under two minutes.
 
 ## Steps
 
@@ -35,5 +35,5 @@ When `com.xrcore.ai` is present, the bridge registers:
 - `llm.generate_response`
 - `llm.route_prompt`
 - `llm.summarize_context`
-- `llm.execute_tool_call`
+- `llm.execute_capability`
 - `llm.normalize_response`

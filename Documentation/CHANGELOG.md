@@ -8,15 +8,16 @@
   - `llm.generate_response`
   - `llm.route_prompt`
   - `llm.summarize_context`
-  - `llm.execute_tool_call`
+  - `llm.execute_capability`
   - `llm.normalize_response`
 - Added explicit runtime layers:
   - Providers
   - Conversations
-  - PromptRouting
+  - Prompting
   - ToolCalling
-  - EventBridge
+  - Events
   - AnalyticsTraces
+- Added end-to-end `Demo_LLM_Capability_Assistant` flow documentation.
 - Added orchestration traces (route/tool-call/summary/normalization).
 
 ## 0.1.0

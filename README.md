@@ -7,6 +7,11 @@
 
 LLM orchestration bridge between XRCore runtime signals and provider-agnostic language workflows.
 
+## GitHub policy
+
+This repository is maintained as **documentation + integration guidance**.
+Runtime package delivery is handled through Unity package distribution.
+
 ## Published foundation (Unity Asset Store)
 
 Install the core SDK from Unity first, then add this module via Git URL:
@@ -33,7 +38,7 @@ Install the core SDK from Unity first, then add this module via Git URL:
 - `llm.generate_response`
 - `llm.route_prompt`
 - `llm.summarize_context`
-- `llm.execute_tool_call`
+- `llm.execute_capability`
 - `llm.normalize_response`
 
 ## Ecosystem Position
@@ -59,25 +64,21 @@ XRCoreEventBus / XRCapabilityRegistry / Analytics
 - No MCP dependency.
 - MCP exposure lives in `xrcore-ai-mcp`.
 
-## Related XRCore Modules
+## Ecosystem map
 
-[![Hub — splibiplay](https://img.shields.io/badge/Hub-splibiplay-24292f?style=flat-square)](https://github.com/splibiplay/splibiplay)
-[![Unity Asset Store — XRCore](https://img.shields.io/badge/Unity%20Store-XRCore-f59e0b?style=flat-square)](https://assetstore.unity.com/packages/tools/ai-ml-integration/xrcore-event-driven-ai-framework-for-unity-xr-366852)
-
-[![xrcore-sdk](https://img.shields.io/badge/GitHub-xrcore--sdk-2563eb?style=flat-square)](https://github.com/splibiplay/xrcore-sdk)
-[![xrcore-context](https://img.shields.io/badge/GitHub-xrcore--context-0e7490?style=flat-square)](https://github.com/splibiplay/xrcore-context)
-[![xrcore-training-toolkit](https://img.shields.io/badge/GitHub-training--toolkit-7c3aed?style=flat-square)](https://github.com/splibiplay/xrcore-training-toolkit)
-[![xrcore-assessment](https://img.shields.io/badge/GitHub-assessment-db2777?style=flat-square)](https://github.com/splibiplay/xrcore-assessment)
-[![xrcore-training-authoring](https://img.shields.io/badge/GitHub-authoring-c2410c?style=flat-square)](https://github.com/splibiplay/xrcore-training-authoring)
-[![xrcore-voice](https://img.shields.io/badge/GitHub-voice-059669?style=flat-square)](https://github.com/splibiplay/xrcore-voice)
-
-[![xrcore-visionplus](https://img.shields.io/badge/GitHub-vision--plus-0f766e?style=flat-square)](https://github.com/splibiplay/xrcore-visionplus)
-[![xrcore-llbridge](https://img.shields.io/badge/GitHub-llbridge-4f46e5?style=flat-square)](https://github.com/splibiplay/xrcore-llbridge)
-[![xrcore-analytics](https://img.shields.io/badge/GitHub-analytics-d97706?style=flat-square)](https://github.com/splibiplay/xrcore-analytics)
-[![xrcore-ai](https://img.shields.io/badge/GitHub-xrcore--ai-9333ea?style=flat-square)](https://github.com/splibiplay/xrcore-ai)
-[![xrcore-ai-mcp](https://img.shields.io/badge/GitHub-xrcore--ai--mcp-7c3aed?style=flat-square)](https://github.com/splibiplay/xrcore-ai-mcp)
-
-*Click a badge to open the GitHub repository or the Unity Asset Store listing.*
+- [XRCore Hub](https://github.com/splibiplay/splibiplay)
+- [xrcore-sdk](https://github.com/splibiplay/xrcore-sdk)
+- [xrcore-context](https://github.com/splibiplay/xrcore-context)
+- [xrcore-training-toolkit](https://github.com/splibiplay/xrcore-training-toolkit)
+- [xrcore-assessment](https://github.com/splibiplay/xrcore-assessment)
+- [xrcore-training-authoring](https://github.com/splibiplay/xrcore-training-authoring)
+- [xrcore-voice](https://github.com/splibiplay/xrcore-voice)
+- [xrcore-visionplus](https://github.com/splibiplay/xrcore-visionplus)
+- [xrcore-llbridge](https://github.com/splibiplay/xrcore-llbridge)
+- [xrcore-ai](https://github.com/splibiplay/xrcore-ai)
+- [xrcore-ai-mcp](https://github.com/splibiplay/xrcore-ai-mcp)
+- [xrcore-agents](https://github.com/splibiplay/xrcore-agents)
+- [xrcore-analytics](https://github.com/splibiplay/xrcore-analytics)
 
 ## Commercial Packaging
 
@@ -89,6 +90,9 @@ XRCoreEventBus / XRCapabilityRegistry / Analytics
 
 - [QuickStart](Documentation/QuickStart.md)
 - [Changelog](Documentation/CHANGELOG.md)
+- [LLM Bridge Audit vs XRCore.AI](Documentation/LLM_Bridge_Audit_vs_XRCore_AI.md)
+- [Official Module Definition](Documentation/LLM_Bridge_Official_Module.md)
+- [Spatial Intelligence Stack](Documentation/XRCore%20Spatial%20Intelligence%20Stack.md)
 - [Third-Party Notices](Documentation/THIRD_PARTY_NOTICES.md)
 
 ## Support
